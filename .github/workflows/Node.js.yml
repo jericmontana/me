@@ -19,9 +19,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd /etc/action-runner/jericmontana/_work/me/me/server
+      - run: cd server
       - run: sudo yarn
-      - run: cd /etc/action-runner/jericmontana/_work/me/me/client
+      - run: cd client
       - run: sudo yarn
       - run: sudo yarn run build
       
