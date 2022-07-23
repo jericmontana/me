@@ -21,10 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd /etc/action-runner/jericmontana/_work/me/me/server
-      - run: sudo yarn
+      - run: cd /etc/action-runner/jericmontana/_work/me/me/server && sudo yarn
       - run: cd /etc/action-runner/jericmontana/_work/me/me/client && sudo yarn
-      - run: sudo yarn
-      - run: sudo yarn run build
+      - run: cd /etc/action-runner/jericmontana/_work/me/me/client && sudo yarn run build
       - run: sudo systemctl restart nginx
       
