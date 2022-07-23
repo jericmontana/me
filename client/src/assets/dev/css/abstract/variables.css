@@ -1,0 +1,63 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+    
+    /* Color */
+    --color-base-text: 18, 18, 18;
+    --color-base-background-1: 255, 255, 255;
+    --color-base-background-2: 243, 243, 243;
+    --color-base-accent-1: 18, 18, 18;
+    --color-base-accent-2: 2, 94, 71;
+
+    --color-section-bg: 226, 230, 255;
+
+    --color-foreground: var(--color-base-text);
+    --color-background: var(--color-base-background-1);
+
+
+        
+    --color-scrollbar-thumb-bg: rgba(var(--color-base-accent-2), 0.75);
+    --color-selection-bg:  rgb(var(--color-base-accent-2));
+    --color-selection-text:  rgb(var(--color-base-background-1));
+
+    --color-type-cursor: rgb(var(--color-base-accent-2));
+
+    --color-shadow: 18, 18, 18;
+
+    /*========== Font and typography ==========*/
+    --font-primary: Poppins;
+    --font-secondary: PTSerif;
+
+    --font-body-scale: 1;
+    --font-body-family: var(--font-secondary);
+    --font-body-style: normal;
+    --font-body-weight: 400;
+
+    --font-heading-scale: 1;
+    --font-heading-family: var(--font-primary);
+    --font-heading-style: normal;
+    --font-heading-weight: 600;
+
+    /*========== Page width ==========*/
+    --page-width: 160rem;
+    --page-width-margin: 2rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+    --z-widget: 1100;
+
+    /* Filter */
+    --filter-invert: invert(100%);
+
+    /* Transition */
+    --duration-short: 100ms;
+    --duration-default: 200ms;
+    --duration-long: 500ms;
+
+    /* Grid Spacing */
+    --grid-desktop-vertical-spacing: 8px;
+    --grid-desktop-horizontal-spacing: 8px;
+    --grid-mobile-vertical-spacing: 4px;
+    --grid-mobile-horizontal-spacing: 4px;
+}

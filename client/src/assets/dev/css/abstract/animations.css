@@ -1,0 +1,43 @@
+@keyframes pulse-effect {
+  0%{
+      transform: scale(0.5);
+  }
+  70%{
+      opacity: 1;
+  }
+  100%{
+      transform: scale(1.5);
+  }
+}
+
+@keyframes typing {
+    100%{
+        left: 118%;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.fade-out{
+    animation: fade-out 3s forwards;
+}
+.fade-in{
+    animation: fade-in 0.4s forwards;
+}
