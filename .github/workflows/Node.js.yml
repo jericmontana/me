@@ -22,6 +22,7 @@ jobs:
       - run: cd server
       - run: sudo yarn
       - run: cd client
+      - run: sudo npm init -y
       - run: sudo yarn
       - run: sudo yarn run build
       
