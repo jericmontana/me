@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Dependencies and Run Production Ready Website
       - run: cd server
       - run: yarn
       - run: cd ../client
