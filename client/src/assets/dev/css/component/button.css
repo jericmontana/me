@@ -1,0 +1,92 @@
+@import '../util/device.css';
+
+:root{
+    --color-btn-bg: var(--color-base-accent-2);
+    --color-btn-lbl: var(--color-base-background-1);
+}
+
+.btn{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(var(--color-btn-bg));
+
+    background-color: rgb(var(--color-btn-bg));
+    color: rgb(var(--color-btn-lbl));
+
+    &.btn--xs{
+        font-size: 1.2rem;
+        padding: 5px 8px;
+        font-weight: 400;
+        max-width: 120px;
+    }
+
+    &.btn--default{
+        padding: 7px 10px;
+        font-weight: 400;
+        max-width: 180px;
+    }
+    
+    &.btn--medium{
+        font-size: 18px;
+        padding: 10px 10px;
+        font-weight: 400;
+        max-width: 260px;
+    }
+    
+    &.btn--large{
+        font-size: 23px;
+        padding: 13px 10px;
+        font-weight: 400;
+        max-width: 370px;
+
+        & svg{
+            margin-left: 1.5rem;
+        }
+    }
+    
+    &-he--lighten{
+        @media --desktop{
+            &:hover{
+                background-color: rgba(var(--color-btn-bg),0.75);
+            }
+        }
+    }
+
+    &-he--color-switch{
+        @media --desktop{
+            &:hover{
+                color: rgb(var(--color-btn-bg));
+                background-color: rgb(var(--color-btn-lbl));
+                border: 1px solid rgb(var(--color-btn-bg));
+            }
+        }
+    }
+    
+    &-he--bs{
+        @media --desktop{
+            &:hover{
+                box-shadow: 6px 8px 22px -2px rgb(0 0 0 / 74%);
+                z-index: auto;
+            }
+        }
+    }
+
+    &-bs{
+        box-shadow: 6px 8px 22px -2px rgba(var(--color-base-accent-2),0.75) !important;
+    }
+
+    &--round-corner{
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    &--auto-width{
+       max-width: fit-content !important;
+    }
+}

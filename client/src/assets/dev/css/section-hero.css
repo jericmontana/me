@@ -1,0 +1,97 @@
+@import './util/device.css';
+.hero{
+    position: relative;
+    @media --tablet-up{
+        .section-container{
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+        }
+    }
+
+    .section-container{
+        padding-bottom: 0rem;
+    }
+   
+
+    .grid__item--text{
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media --mobile{
+            &{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__text{
+        grid-area: 1/1;
+        position: relative;
+
+        .kicker{
+            span{
+                color: rgba(var(--color-base-accent-2),0.9);
+            }
+            
+            @media --tablet{
+                &{
+                    --font-heading-scale: 0.8 !important;
+                }
+            }
+
+            @media --mobile{
+                &{
+                    --font-heading-scale: 0.75 !important;
+                }
+            }
+
+        }
+
+        h2{
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+
+            @media --mobile{
+                &{
+                --font-heading-scale: 0.8 !important;
+                }
+            }
+        }
+
+        .typed-cursor{
+            --font-heading-scale: 0.8 !important;
+        }
+    }
+
+    &__button{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+   &__image{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       overflow: hidden;
+
+       img{
+           max-width: 90%;
+           object-fit: contain;
+
+           @media --tablet-up{
+               &{
+                    max-width: 95%;
+               }
+           }
+       }
+   }
+
+
+   &__text{
+       padding: 1rem;
+   }
+
+}

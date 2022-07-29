@@ -1,0 +1,8 @@
+.announcementbar{
+    position: relative;
+    overflow: hidden;
+
+    .section-container{
+        padding: 1rem !important;
+    }
+}
