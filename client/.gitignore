@@ -21,3 +21,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dev Image Unoptimized
+src/assets/dev/img

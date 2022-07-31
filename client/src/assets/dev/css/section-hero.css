@@ -1,6 +1,8 @@
 @import './util/device.css';
 .hero{
     position: relative;
+    overflow: hidden;
+
     @media --tablet-up{
         .section-container{
             padding-top: 1rem;
@@ -20,9 +22,10 @@
 
         @media --mobile{
             &{
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
             }
         }
+
     }
 
     &__text{
@@ -49,12 +52,18 @@
         }
 
         h2{
-            padding-top: 1.4rem;
+            padding-top: 1rem;
             padding-bottom: 1.4rem;
+
+            @media --tablet{
+                &{
+                    --font-heading-scale: 0.9 !important;
+                }
+            }
 
             @media --mobile{
                 &{
-                --font-heading-scale: 0.8 !important;
+                --font-heading-scale: 1 !important;
                 }
             }
         }
@@ -62,6 +71,76 @@
         .typed-cursor{
             --font-heading-scale: 0.8 !important;
         }
+
+
+        /* For Shopify Developer Logo */
+        img{
+            height: auto;
+            width: 100%;
+            max-width: 180px;
+
+            @media --mobile{
+                &{
+                    max-width: 145px;
+                }
+            }
+        }
+
+        /* For Brief Intro */
+        .brief-intro{
+            max-width: 300px;
+
+            @media --desktop{
+                &{
+                    max-width: 350px;
+                }
+            }
+
+            @media --tablet{
+                &{
+                    max-width: 320px;
+                }
+            }
+
+            span{
+                padding: 0.2rem 0.3rem;
+                background-color: rgba(var(--color-highlightedtext-background),0.75);
+                color: rgb(var(--color-highlightedtext-foreground));
+            }
+        }
+
+
+        /* For Icons */
+        $size_icon: 3.5rem;
+        .icons{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 4rem;
+
+            @media --mobile{
+                &{
+                    margin-top: 3.5rem;
+                }
+            }
+
+            .icon:not(:last-of-type){
+                margin-right: 2rem;
+            }
+
+            a{
+                border-radius: 50%;
+                background-color: rgba(var(--color-base-accent-2),0.9);
+                color: rgb(var(--color-base-background-1));
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: $size_icon;
+                height: $size_icon;
+            }
+        }
+
     }
 
     &__button{

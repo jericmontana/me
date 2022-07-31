@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/prod/img/Jeric_Montana_Shopif_Developer_LOGO.png'
+import logo from '../assets/prod/img/Jeric_Montana_Shopify_Developer_LOGO.png'
 
 import { HiMenuAlt2 } from 'react-icons/hi'
 import { HiOutlineX } from 'react-icons/hi'
@@ -36,7 +36,7 @@ const HeaderSection = () => {
   ];
 
   return (
-    <sticky-header class="line">
+    <sticky-header>
     <header className="header page-width" id="site-header">
 
       <div className="header__icon header__icon--drawer medium-hide large-up-hide" onClick={toggleDrawer}>

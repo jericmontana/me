@@ -2,17 +2,22 @@
 :root {
     
     /* Color */
+    --color-blue: 3, 152, 158;
+
     --color-base-text: 18, 18, 18;
     --color-base-background-1: 255, 255, 255;
     --color-base-background-2: 243, 243, 243;
     --color-base-accent-1: 18, 18, 18;
     --color-base-accent-2: 2, 94, 71;
 
+    
     --color-section-bg: 226, 230, 255;
 
     --color-foreground: var(--color-base-text);
     --color-background: var(--color-base-background-1);
 
+    --color-highlightedtext-background: var(--color-blue);
+    --color-highlightedtext-foreground: var(--color-base-background-1);
 
         
     --color-scrollbar-thumb-bg: rgba(var(--color-base-accent-2), 0.75);
