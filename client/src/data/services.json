@@ -1,0 +1,20 @@
+[
+    {
+        "image": "ImgWebDev",
+        "name": "Shopify",
+        "name2": "Development",
+        "description": "Get your Shopify store up and running with custom solutions suited to your brand and business needs."
+    },
+    {
+        "image": "ImgWebDesign",
+        "name": "Shopify",
+        "name2": "Web Design",
+        "description": "Craft a professional Shopify website that appropriately portrays your business and brand."
+    },
+    {
+        "image": "ImgCRO",
+        "name": "Conversion",
+        "name2": "Rate Optimization",
+        "description": "Boost your e-commerce store's Conversion Rate and Revenue using actionable guidelines."
+    }
+]
