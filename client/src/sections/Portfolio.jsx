@@ -9,24 +9,25 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import HomeInteriorItems from '../assets/prod/img/Shopify_Home_Interior_Items_Design.png'
+import BeautyProduct from '../assets/prod/img/Shopify_Beauty_Product_Design.png'
+import HealthAndWellness from '../assets/prod/img/Shopify_Health_and_Wellness_Design.png'
+
 
 const PortfolioSection = () => {
 
     const projects = [
-        {
-            description: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non modo cor non habere, sed ne palatum quidem. Tum Torquatus: Prorsus, inquit, assentior; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Graece donan, Latine voluptatem vocant. Quos quidem tibi studiose et diligenter tractandos magnopere censeo."
+        {  
+            niche : "Home Interior Items",
+            image : HomeInteriorItems
         },
         {
-            description: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non modo cor non habere, sed ne palatum quidem. Tum Torquatus: Prorsus, inquit, assentior; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Graece donan, Latine voluptatem vocant. Quos quidem tibi studiose et diligenter tractandos magnopere censeo."
+            niche : "Beauty Product",
+            image: BeautyProduct
         },
         {
-            description: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non modo cor non habere, sed ne palatum quidem. Tum Torquatus: Prorsus, inquit, assentior; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Graece donan, Latine voluptatem vocant. Quos quidem tibi studiose et diligenter tractandos magnopere censeo."
-        },
-        {
-            description: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non modo cor non habere, sed ne palatum quidem. Tum Torquatus: Prorsus, inquit, assentior; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Graece donan, Latine voluptatem vocant. Quos quidem tibi studiose et diligenter tractandos magnopere censeo."
-        },
-        {
-            description: "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non modo cor non habere, sed ne palatum quidem. Tum Torquatus: Prorsus, inquit, assentior; Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. Graece donan, Latine voluptatem vocant. Quos quidem tibi studiose et diligenter tractandos magnopere censeo."
+            niche : "Health and Wellness",
+            image: HealthAndWellness
         }
     ]
     
@@ -67,7 +68,7 @@ const PortfolioSection = () => {
                         {
                             projects && projects.map((project, index) => {
                                 return (
-                                    <SwiperSlide key={index}><p>{project.description}</p></SwiperSlide>
+                                    <SwiperSlide key={index} className="swiper-item"><img src={project.image} alt={project.niche} title={project.niche} loading='lazy' draggable='false'/></SwiperSlide>
                                 )
                             })
                         }
