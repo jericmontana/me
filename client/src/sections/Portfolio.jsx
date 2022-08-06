@@ -49,6 +49,7 @@ const PortfolioSection = () => {
                         slidesPerView={1}
                         spaceBetween={20}
                         grabCursor={true}
+                        loop
                         pagination={{ clickable: true }}
                         navigation={{
                             prevEl: '#swiper-button-prev-portfolio',
@@ -68,7 +69,7 @@ const PortfolioSection = () => {
                         {
                             projects && projects.map((project, index) => {
                                 return (
-                                    <SwiperSlide key={index} className="swiper-item"><img src={project.image} alt={project.niche} title={project.niche} loading='lazy' draggable='false'/></SwiperSlide>
+                                    <SwiperSlide key={index} className="swiper-item"><img src={project.image} alt={project.niche} title={project.niche} loading='lazy' draggable='false' width="1000" height="1393"/></SwiperSlide>
                                 )
                             })
                         }
