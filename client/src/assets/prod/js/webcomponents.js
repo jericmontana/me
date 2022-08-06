@@ -1,4 +1,3 @@
-// From header.liquid
 class StickyHeader extends HTMLElement {
     constructor() {
         super();

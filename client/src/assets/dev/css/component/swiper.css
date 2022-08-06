@@ -1,0 +1,57 @@
+.swiper{
+    padding-top: 2rem !important;
+    padding-bottom: 3.4rem !important;
+}
+
+.swiper-pagination{
+    bottom: 0px !important;
+
+    .swiper-pagination-bullet-active{
+        background-color: rgb(var(--color-base-accent-2)) !important;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: block !important;
+}
+
+/* For Relocatings Swiper Button */
+.swiper-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .swiper-button{
+        position: relative;
+        height: 2.4rem;
+        width: 2.4rem;
+        color: rgb(var(--color-base-accent-2));
+
+        border: 1px solid rgb(var(--color-base-accent-2));
+
+        &-disabled{
+            color: rgba(var(--color-base-accent-2),0.5);
+            border: 1px solid rgba(var(--color-base-accent-2),0.5);
+        }
+
+        .icon{
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    .swiper-button--prev{
+        margin-right: 1rem;
+
+        .icon{
+            transform: rotate(90deg);
+        }
+    }
+
+    .swiper-button--next{
+
+        .icon{
+            transform: rotate(-90deg);
+        }
+    }
+}

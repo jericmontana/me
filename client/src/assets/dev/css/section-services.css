@@ -2,7 +2,6 @@
 
 .services{
    position: relative;
-   overflow: hidden;
 
    .service-card{
        & *{

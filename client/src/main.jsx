@@ -10,6 +10,7 @@ import AnnouncementBar from './sections/AnnouncementBar'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
 import Services from './sections/Services'
+import Portfolio from './sections/Portfolio.jsx'
 
 
 ReactDOM.createRoot(document.querySelector('#root')).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
     <Header />
     <Hero />
     <Services />
+    <Portfolio />
     <div className="stickyheadertest">Sticky Header on Scrollup Testing</div>
   </Router>
 )

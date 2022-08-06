@@ -85,3 +85,7 @@ h5:empty,
 h6:empty {
   display: none;
 }
+
+img{
+    pointer-events: none !important;
+}

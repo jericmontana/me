@@ -12,8 +12,8 @@ const ServicesSection = () => {
 
     return (
         <section className="services">
-            <div className='blur' style={{ background: 'blue', top: '90%', left: '80%'}}></div>
-            <div className='blur small-hide' style={{ background: 'red', top: '50%', left: '10%'}}></div>
+            <div className='blur' style={{ background: 'blue', top: '100%', left: '75%'}}></div>
+            <div className='blur small-hide' style={{ background: 'red', top: '40%', left: '10%'}}></div>
             <div className='blur medium-hide large-up-hide' style={{ background: 'red', top: '30%', left: '10%'}}></div>
             
             <div className="section-container">
