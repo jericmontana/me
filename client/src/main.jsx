@@ -20,6 +20,5 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
     <Hero />
     <Services />
     <Portfolio />
-    <div className="stickyheadertest">Sticky Header on Scrollup Testing</div>
   </Router>
 )
